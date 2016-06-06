@@ -1,0 +1,12 @@
+1. Create folder in hdfs
+hadoop fs -mkdir /user/ubuntu/test
+
+2. To put file from linux to hdfs
+hadoop fs -put input.txt /user/ubuntu/test/
+
+3. To execute jar file from hadoop directory
+hadoop jar hadoop-examples-1.2.1.jar wordcount /user/ubuntu/test /user/ubuntu/output1
+
+4. To see the output
+hadoop fs -cat /user/ubuntu/output1/part-r-00000
+
